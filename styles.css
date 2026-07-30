@@ -30,12 +30,19 @@ header {
 
 canvas {
   border: 3px solid #444;
-  background-color: #000;
   max-width: 90vw;
   max-height: 55vh;
   width: auto;
   height: auto;
   box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+#tetris {
+  background-color: #000;
+  background-image: 
+    linear-gradient(to right, #333 1px, transparent 1px),
+    linear-gradient(to bottom, #333 1px, transparent 1px);
+  background-size: 8.333% 5%;
 }
 
 /* Touch controls layout */
@@ -73,18 +80,9 @@ canvas {
 }
 
 .btn-rotate {
-  
   background-color: #2e6da4;
 }
 
 .btn-drop {
   background-color: #d9534f;
-}
-#tetris {
-  background-color: #000;
-  background-image: 
-    linear-gradient(to right, #222 1px, transparent 1px),
-    linear-gradient(to bottom, #222 1px, transparent 1px);
-  /* Percentage-based size scales perfectly regardless of canvas resizing! */
-  background-size: 8.333% 5%; 
 }

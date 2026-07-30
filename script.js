@@ -207,8 +207,8 @@ function drawMatrix(matrix, offset) {
 }
 
 function draw() {
-  context.fillStyle = '#000';
-  context.fillRect(0, 0, canvas.width, canvas.height);
+  // Clear the canvas so the CSS grid pattern shows through empty spots
+  context.clearRect(0, 0, canvas.width, canvas.height);
 
   drawMatrix(arena, {x: 0, y: 0});
   drawMatrix(player.matrix, player.pos);

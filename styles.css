@@ -82,9 +82,9 @@ canvas {
 }
 #tetris {
   background-color: #000;
-  /* Creates horizontal and vertical gridlines spaced every 20px */
   background-image: 
     linear-gradient(to right, #222 1px, transparent 1px),
     linear-gradient(to bottom, #222 1px, transparent 1px);
-  background-size: 20px 20px; /* Matches your JavaScript context.scale(20, 20) */
+  /* Percentage-based size scales perfectly regardless of canvas resizing! */
+  background-size: 8.333% 5%; 
 }
